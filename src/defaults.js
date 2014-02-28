@@ -13,8 +13,10 @@ var defaults = {
 	weekNumbers: false,
 	weekNumberCalculation: 'iso',
 	weekNumberTitle: 'W',
-	
-	// editing
+
+	timeline: true,
+
+    // editing
 	//editable: false,
 	//disableDragging: false,
 	//disableResizing: false,
@@ -31,18 +33,24 @@ var defaults = {
 	titleFormat: {
 		month: 'MMMM yyyy',
 		week: "MMM d[ yyyy]{ '&#8212;'[ MMM] d yyyy}",
-		day: 'dddd, MMM d, yyyy'
-	},
+		day: 'dddd, MMM d, yyyy',
+        agenda: 'dddd, d MMM yyyy'
+    },
 	columnFormat: {
 		month: 'ddd',
 		week: 'ddd M/d',
-		day: 'dddd M/d'
+		day: 'dddd M/d',
+        agenda: 'dddd, d MMM'        
 	},
 	timeFormat: { // for event elements
 		'': 'h(:mm)t' // default
 	},
-	
-	// locale
+
+    dateFormat:{ // for event elements
+        '':'ddd MMM d' // default
+    },
+
+    // locale
 	isRTL: false,
 	firstDay: 0,
 	monthNames: ['January','February','March','April','May','June','July','August','September','October','November','December'],
@@ -57,8 +65,9 @@ var defaults = {
 		today: 'today',
 		month: 'month',
 		week: 'week',
-		day: 'day'
-	},
+		day: 'day',
+        agenda: 'agenda'
+    },
 	
 	// jquery-ui theming
 	theme: false,

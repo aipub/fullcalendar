@@ -221,6 +221,10 @@ function Calendar(element, options, eventSources, resourceSources) {
 
 		ignoreWindowResize--;
 
+		if (t.option("timeline")) {
+			timeline(currentView);
+		}
+
 		getAndRenderEvents();
 	}
 	

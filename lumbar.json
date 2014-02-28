@@ -30,6 +30,10 @@
         "src/agenda/AgendaDayView.js",
         "src/agenda/AgendaView.js",
         "src/agenda/AgendaEventRenderer.js",
+
+        "src/agenda/AgendaListView.js",
+        "src/agenda/AgendaListEventRenderer.js",
+              
 		"src/resource/ResourceMonthView.js",
         "src/resource/ResourceWeekView.js",
 		"src/resource/ResourceNextWeeksView.js",
@@ -43,6 +47,7 @@
         "src/common/CoordinateGrid.js",
         "src/common/HoverListener.js",
         "src/common/HorizontalPositionCache.js",
+        "src/common/timeline.js",
         "src/outro.js"
       ],
       "styles": [
@@ -50,7 +55,8 @@
         "src/common/common.css",
         "src/basic/basic.css",
         "src/agenda/agenda.css",
-		"src/resource/resource.css"
+        "src/common/timeline.css",
+        "src/resource/resource.css"
       ]
     },
     "fullcalendar.print": {
